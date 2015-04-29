@@ -3,6 +3,15 @@
     <exp:References/>
     <wsp:Policy>
         <wsp:All wsp:Usage="Required">
+            <L7p:CommentAssertion>
+                <L7p:Comment stringValue="***********************************************"/>
+            </L7p:CommentAssertion>
+            <L7p:CommentAssertion>
+                <L7p:Comment stringValue="* Test"/>
+            </L7p:CommentAssertion>
+            <L7p:CommentAssertion>
+                <L7p:Comment stringValue="***********************************************"/>
+            </L7p:CommentAssertion>
             <L7p:HardcodedResponse>
                 <L7p:Base64ResponseBody stringValue="JHtnYXRld2F5LnRzc19zZXJ2ZXJ9"/>
                 <L7p:ResponseContentType stringValue="text/plain; charset=UTF-8"/>
