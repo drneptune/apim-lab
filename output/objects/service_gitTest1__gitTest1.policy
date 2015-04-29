@@ -7,13 +7,13 @@
                 <L7p:Comment stringValue="***********************************************"/>
             </L7p:CommentAssertion>
             <L7p:CommentAssertion>
-                <L7p:Comment stringValue="* Test - 2"/>
+                <L7p:Comment stringValue="* Test - new version"/>
             </L7p:CommentAssertion>
             <L7p:CommentAssertion>
                 <L7p:Comment stringValue="***********************************************"/>
             </L7p:CommentAssertion>
             <L7p:HardcodedResponse>
-                <L7p:Base64ResponseBody stringValue="T0sKJHtnYXRld2F5LnRzc19zZXJ2ZXJ9"/>
+                <L7p:Base64ResponseBody stringValue="T0sgLSAyCiR7Z2F0ZXdheS50c3Nfc2VydmVyfQ=="/>
                 <L7p:ResponseContentType stringValue="text/plain; charset=UTF-8"/>
             </L7p:HardcodedResponse>
         </wsp:All>
