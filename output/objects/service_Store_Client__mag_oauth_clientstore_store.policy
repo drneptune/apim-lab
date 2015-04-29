@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<exp:Export xmlns:exp="http://www.layer7tech.com/ws/policy/export" xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy" Version="3.0">
+    <exp:References/>
+    <wsp:Policy>
+        <wsp:All wsp:Usage="Required">
+            <L7p:SslAssertion/>
+            <wsp:OneOrMore wsp:Usage="Required">
+                <wsp:All wsp:Usage="Required">
+                    <L7p:EvaluateJsonPathExpression>
+                        <L7p:Expression stringValue="client_key"/>
+                        <L7p:VariablePrefix stringValue="JsonRequest"/>
+                    </L7p:EvaluateJsonPathExpression>
+                    <L7p:EvaluateJsonPathExpression>
+                        <L7p:Expression stringValue="secret"/>
+                        <L7p:VariablePrefix stringValue="JsonRequest"/>
+                    </L7p:EvaluateJsonPathExpression>
+                    <L7p:HardcodedResponse>
+                        <L7p:Base64ResponseBody stringValue="UmVzcG9uc2U6CnsKICAgImpzb25ycGMiOiAiMi4wIiwKICAgImlkIjogIjEyMzQ1IiwKICAgInJlc3VsdCI6ICAgIHsKICAgICAgInJlc3VsdCI6ICJ0cnVlIiwKICAgICAgInRyYW5zYWN0aW9uX3R5cGUiOiAiQ2xpZW50UGVyc2lzdCIsCiAgICAgICJlcnJvcl9jb2RlIjogbnVsbAogICB9Cn0K"/>
+                    </L7p:HardcodedResponse>
+                </wsp:All>
+            </wsp:OneOrMore>
+        </wsp:All>
+    </wsp:Policy>
+</exp:Export>
