@@ -3,6 +3,18 @@
     <exp:References/>
     <wsp:Policy>
         <wsp:All wsp:Usage="Required">
+            <L7p:CommentAssertion>
+                <L7p:Comment stringValue="**********************************************************"/>
+            </L7p:CommentAssertion>
+            <L7p:CommentAssertion>
+                <L7p:Comment stringValue="* TSS Test Service - Client Get"/>
+            </L7p:CommentAssertion>
+            <L7p:CommentAssertion>
+                <L7p:Comment stringValue="*"/>
+            </L7p:CommentAssertion>
+            <L7p:CommentAssertion>
+                <L7p:Comment stringValue="**********************************************************"/>
+            </L7p:CommentAssertion>
             <L7p:SslAssertion/>
             <wsp:OneOrMore wsp:Usage="Required">
                 <wsp:All wsp:Usage="Required">
